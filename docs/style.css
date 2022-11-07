@@ -1,0 +1,14 @@
+.app-name img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+    img{
+        max-width: 700px;
+    }
+
+    .full-width-image {
+        max-width: 100%;
+    }
+  }
