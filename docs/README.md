@@ -105,7 +105,7 @@ To create a new Campaign, click on the *+ New Campaign* button on the top right 
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image12.jpg" width="auto">
 
-Once you click on the *Create* button, your new Campaign will appear on the Campaigns list and you can click on it to edit any or all of the *Campaign Details*. You can also configure the *Campaign Annotating*, *Campaign Access* and *Campaign Base Annotations* sections.
+Once you click on the *Create* button, your new Campaign will appear on the Campaigns list and you can click on it to edit any or all of the *Campaign Details*. There you also have multiple configuration options via the *Campaign Annotating*, *Campaign Access* and *Campaign Base Annotations* sections to customise the campaign according to your needs.
 
 #### Campaign Details Section
 
@@ -117,26 +117,27 @@ The input fields marked as *(multilingual)* can be edited in multiple languages 
 
 #### Campaign Annotating Section
 
-Here the user can target the collections they want to annotate.
-The can also select the *campaign purpose, orientation, feedback method and motivations* (see "Annotating an Item").
+Here the Campaign Organizer should select the collections they want to target in the campaign.
+They should also set the *campaign purpose, orientation, feedback method and motivations* (see "Annotating an Item") options.
 
-In case the user has selected *Tagging* as the campaign motivation they can set the *Semantic Tagging Vocabularies* to be used in the campaign.
-And if they want to connect different vocabularies per tag type, they can use *Semantic Tag Groupings*.
+Through the *campaign motivation* option they can select the annotation types that will be available for the campaign. They can even select a combination of annotation types for the campaign, like Tagging, GeoTagging and Commenting.
+
+In case they have selected *Tagging* as the campaign motivation, they can set the *Semantic Tagging Vocabularies* to be used for the tagging.
+They can also connect multiple vocabularies per tag type, by using  *Semantic Tag Groupings*.
 
 <img src="_media/campaign-editor-campaign-annotating.png" width="auto">
 
 #### Campaign Access Section
 
-Here, the user can select the campaign moderators and the usergroups they want to target for the campaign. Both fields offer auto-complete functionality.
+Here, the Campaign Organizer can add extra campaign moderators and select any specific usergroups they want to target for the campaign. Both options are optional and offer auto-complete functionality.
 
 <img src="_media/campaign-editor-campaign-access.png" width="auto">
 
 #### Campaign Base Annotations Section
 
-In this section the user can import annotations to be used as *campaign base annotations*. Then they can run the campaign based on these annotations. The annotations can either be imported from MINT or by uploading a JSON with the appropriate format.
+In this section the Campaign Organizer can import annotations to be used as *campaign base annotations*. Then, they can run the campaign to validate these anntotions. The annotations can either be imported from MINT or via a JSON with the appropriate format.
 
 <img src="_media/campaign-editor-campaign-base annotations.png" width="auto">
-
 
 
 ### Create/Edit Collection
@@ -178,12 +179,12 @@ When a Campaign Owner visits a Campaign page, a button named "Moderate Campaign"
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image20.jpg" width="auto">
 
-This button navigates to a Campaign Validation page which provides some tools that only a Campaign Owner has access to.
+This button navigates to a Campaign Moderation page which provides moderation tools that only a Campaign Owner has access to.
 
 <img src="_media/campaign-moderate.png" width="auto">
 
 ### Statistics
-By clicking the *Statistics* button, the Campaign Owner can view some statistics about that specific Campaign, like total items, total annotations, annotation upvotes etc.
+By clicking the *Statistics* button, the Campaign Owner can view some statistics about that specific Campaign, like total items, total annotations, annotation upvotes, contribution status  etc.
 
 <img src="_media/campaign-moderate-statistics.png" width="auto">
 
@@ -193,7 +194,7 @@ By clicking the *Validation* button the Campaign Owner can validate the campaign
 <img src="_media/campaign-moderate-validation.png" width="auto">
 
 ### Publish Criteria
-The *Publish Criteria* button opens a pop-up page which allows the Campaign Owner to configure the criteria the published annotations need to fulfil.
+The *Publish Criteria* button opens a pop-up page which allows the Campaign Owner to configure the criteria the exported annotations need to fulfil. Only annotations that fulfil the criteria will be included in the data export. The *minimum annotation score* is the sum of the upvotes minus the downvotes.
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image24.jpg" width="auto">
 
@@ -205,8 +206,8 @@ These two buttons allow the Campaign Owner to export the contributing users and 
 <img src="_media/campaign-moderate-data-export.png" width="auto">
 
 #### Export Annotations for MINT Tool
-In case the Campaign Owner wants to export the annotations and ingest them to the MINT tool they can click on the *Copy Annotations URL for MINT* button.
-This will copy the exported annotations URL which can then be pasted in the respective MINT workspace to, do a controlled import of the annotations.
+In case the Campaign Owner wants to export the annotations to ingest them into the MINT tool, they can click on the *Copy Annotations URL for MINT* button.
+Then they can paste the URL in the respective MINT workspace to do a controlled import of the annotations.
 
 <!-- 
 local image example URL: "./_media/image1.jpg"
