@@ -38,7 +38,7 @@ By hovering on the thumbnail of an Item, you can either click on it to enter the
 If you want to create annotations for am Item, click on it to access its page.
 
 ## Annotating an Item
-There are three annotation types one can add to an Item.
+There are five annotation types one can add to an Item.
 
 1. **Tags**
 2. **Comments**
@@ -60,22 +60,22 @@ The second annotation type is a **comment**. Comments are text annotations, just
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image8.jpg" width="auto">
 
-Comments can also be *Upvoted*, *Downvoted* or *Removed* by other users. 
+Comments can also be *Upvoted*, *Downvoted* or *Removed* by other users.
 
 ### 3. GEOTAGGING
-**Geotagging** is a special kind of tag that refers specifically to a location. A user can start typing the location name in the input field under the map, and then select the appropriate location from the suggested ones on the drop-down below. Geotags can also be validated by the supported feedback methods (upvoting or percentage rating).
+**Geotagging** is a special kind of tag that refers specifically to a location. A user can start typing the location name in the input field under the map, and then select the appropriate location from the suggested ones on the drop-down below. Geotags can also be *Upvoted*, *Downvoted* or *Removed* by other users.
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image9.jpg" width="auto">
 
 ### 4. COLORTAGGING
 
-**Colortagging** is a special kind of tag that refers to color. A user can select the color from a predefined color pallette. Colortags can also be validated by the supported validation methods (upvoting or percentage rating).
+**Colortagging** is a special kind of tag that refers to color. A user can select the color from a predefined color pallette. Colortags can also be *Upvoted*, *Downvoted* or *Removed* by other users.
 
 <img src="_media/annotating-colortagging.png" width="auto">
 
 ### 5. IMAGETAGGING
 
-**IMAGETAGGING** is a special kind of tag that refers to tagging images. A user can see the original image along with algorithm-generated ones (e.g. by Super-Resolution models). The user can then click *Compare* to start the comparison.
+**IMAGETAGGING** is a special kind of tag that refers to tagging images, by making use of the campaign base annotation functionality. A user can see the original image along with algorithm-generated ones (e.g. by Super-Resolution models). The user can then click *Compare* to start the comparison.
 
 <img src="_media/annotating-image-tagging.png" width="auto">
 
@@ -204,12 +204,9 @@ These two buttons allow the Campaign Owner to export the contributing users and 
 
 <img src="_media/campaign-moderate-data-export.png" width="auto">
 
-#### Export Annotations for MINT
-The MINT tool supports controlled import of the annotations exported from CrowdHeritage.
-
-Once you import the exported annotations in MINT the Campaign Owner can see a statistical overview of the annotations and filter the annotations you want to ingest into MINT by various options. For detailed information check the tool's respective documentation.
-
-
+#### Export Annotations for MINT Tool
+In case the Campaign Owner wants to export the annotations and ingest them to the MINT tool they can click on the *Copy Annotations URL for MINT* button.
+This will copy the exported annotations URL which can then be pasted in the respective MINT workspace to, do a controlled import of the annotations.
 
 <!-- 
 local image example URL: "./_media/image1.jpg"
