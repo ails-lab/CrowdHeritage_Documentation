@@ -137,6 +137,8 @@ Here, the Campaign Organizer can add extra campaign moderators and select any sp
 
 In this section the Campaign Organizer can import annotations to be used as *campaign base annotations*. Then, they can run the campaign to validate these anntotions. The annotations can either be imported from MINT or via a JSON with the appropriate format.
 
+*Note*: The imported annotations should conform to the expected [Annotation Model](_resources/Annotation_Model_5_3_24.pdf).
+
 <img src="_media/campaign-editor-campaign-base annotations.png" width="auto">
 
 
