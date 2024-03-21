@@ -123,7 +123,7 @@ Based on the campaign type different options become availablem.
 
 ##### Campaign Type: Basic
 
-The basic campaign type caters for the majority of scenarios a Campaign Organiser needs. It supports creating simple campaigns that are concerned with a single annotation type (e.g. semantic tagging), but it also supports the creation of complex campaigns, where the campaign organisers can specify multiple annotation types (semantic tagging,  colortagging, geotagging, commenting). The desired annotation types are specified via the “Campaign motivations'' multi-select option.
+The basic campaign type caters for the majority of scenarios a Campaign Organiser needs. It supports creating simple campaigns that are concerned with a single annotation type (e.g. semantic tagging), but it also supports the creation of complex campaigns, where the campaign organisers can specify multiple annotation types (semantic tagging,  colortagging, geotagging, commenting). The desired annotation types are specified via the “Campaign motivations" multi-select option.
 
 Via the “Campaign purpose” option the campaign organisers can select whether the contributors should be able to create and validate or only validate existing annotations.
 
@@ -217,7 +217,8 @@ By clicking the *Statistics* button, the Campaign Owner can view some statistics
 <img src="_media/campaign-moderate-statistics.png" width="auto">
 
 ### Validation
-By clicking the *Validation* button the Campaign Owner can validate the campaign annotations. By typing or selecting one of the available tags, like "Bass saxophone", a list of Items annotated with the chosen tag will appear.
+By clicking on the "Validation" tab, the Campaign Owner can automatically validate the produced annotations, based on the feedback (upvotes/downvotes) they have received by the campaign contributors.
+
 
 <img src="_media/moderate-campaign-validation.png" width="auto">
 
@@ -233,7 +234,7 @@ By clicking the *Data Export* button, the Campaign Owner can see the two campaig
 The Campaign Owner is presented with two options for exporting annotations. They can either copy the annotations download link into the clipboard or directly download the annotations file.
 
 #### EXPORT Contibutors
-There are two ways of exporting the campaign contributors: as CSV file (which contains a table with some basic information regarding the users), or as JSON file (which contains more detailed information about the contributing users)
+There are two ways of exporting the campaign contributors: as CSV file (which contains a table with some basic information regarding the users), or as JSON file (which contains more detailed information about the contributing users).
 
 <img src="_media/moderate-campaign-data-export.png" width="auto">
 
