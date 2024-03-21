@@ -38,16 +38,15 @@ By hovering on the thumbnail of an Item, you can either click on it to enter the
 If you want to create annotations for am Item, click on it to access its page.
 
 ## Annotating an Item
-There are five annotation types one can add to an Item.
+There are four annotation types one can add to an Item.
 
-1. **Tags**
-2. **Comments**
-3. **Geotags**
-4. **Colortags**
-5. **Imagetags**
+1. **Semantic Tagging**
+2. **Commenting**
+3. **GeoTagging**
+4. **ColorTaging**
 
-### 1. TAGS
-The first annotation type on the right sidebar are **tags**. Tags are predefined categories that can describe an Item. You can either *Upvote*, *Downvote* or *Remove* an existing tag by clicking the thumbs-up, thumbs-down or "X" icon next to that tag, respectively.
+### 1. Semantic Tagging
+The first annotation type on the right sidebar are **semantic tags**. Semantic tags are predefined categories that can describe an Item. You can either *Upvote*, *Downvote* or *Remove* an existing tag by clicking the thumbs-up, thumbs-down or "X" icon next to that tag, respectively.
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image6.jpg" width="auto">
 
@@ -56,7 +55,7 @@ There is also the option to add a new tag by typing it in the input field. Since
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image7.jpg" width="auto">
 
 ### 2. COMMENTING
-The second annotation type is a **comment**. Comments are text annotations, just like tags, with the essential difference that they are a free-text strings instead of predefined strings. If a user feels that the information contained in the tags is not adequate, they can add a custom text that conveys the information they want to add as an annotation.
+The second annotation type is a **comment**. Comments are text annotations, just like semantic tags, with the essential difference that they are a free-text strings instead of predefined strings. If a user feels that the information contained in the semantic tags is not adequate, they can add a custom text that conveys the information they want to add as an annotation.
 
 <img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image8.jpg" width="auto">
 
@@ -73,9 +72,9 @@ Comments can also be *Upvoted*, *Downvoted* or *Removed* by other users.
 
 <img src="_media/annotating-colortagging.png" width="auto">
 
-### 5. IMAGETAGGING
+## Image Comparison
 
-**IMAGETAGGING** is a special kind of tag that refers to tagging images, by making use of the campaign base annotation functionality. A user can see the original image along with algorithm-generated ones (e.g. by Super-Resolution models). The user can then click *Compare* to start the comparison.
+In *Image Comparison* campaigns, users can compare and rank the highest resolution image. A user can see the original image along with algorithm-generated ones (e.g. by Super-Resolution models). The user can then click *Compare* to start the comparison.
 
 <img src="_media/annotating-image-tagging.png" width="auto">
 
@@ -117,15 +116,40 @@ The input fields marked as *(multilingual)* can be edited in multiple languages 
 
 #### Campaign Annotating Section
 
-Here the Campaign Organizer should select the collections they want to target in the campaign.
-They should also set the *campaign purpose, orientation, feedback method and motivations* (see "Annotating an Item") options.
+First, the user needs to select one of the available campaign types (basic, translate, image comparison) through the *campaign type* option.
+Based on the campaign type different options become availablem.
 
-Through the *campaign motivation* option they can select the annotation types that will be available for the campaign. They can even select a combination of annotation types for the campaign, like Tagging, GeoTagging and Commenting.
+<img src="_media/campaign-editor-campaign-annotating-types.png" width="auto">
 
-In case they have selected *Tagging* as the campaign motivation, they can set the *Semantic Tagging Vocabularies* to be used for the tagging.
-They can also connect multiple vocabularies per tag type, by using  *Semantic Tag Groupings*.
+##### Campaign Type: Basic
 
-<img src="_media/campaign-editor-campaign-annotating.png" width="auto">
+The basic campaign type caters for the majority of scenarios a Campaign Organiser needs. It supports creating simple campaigns that are concerned with a single annotation type (e.g. semantic tagging), but it also supports the creation of complex campaigns, where the campaign organisers can specify multiple annotation types (semantic tagging,  colortagging, geotagging, commenting). The desired annotation types are specified via the “Campaign motivations'' multi-select option.
+
+Via the “Campaign purpose” option the campaign organisers can select whether the contributors should be able to create and validate or only validate existing annotations.
+
+<img src="_media/campaign-editor-campaing-annotating-basic.png" width="auto">
+
+With *Semantic Tag Groupings* enabled:
+
+<img src="_media/campaign-editor-campaing-annotating-basic-semantic-group-tagging.png" width="auto">
+
+##### Campaign Type: Translate
+
+The translate campaign enables running campaigns to validate translation annotations. For this campaign the percentage rating method is enabled by default, where the contributors can rate with a percentage bar the provided translation.
+
+<img src="_media/campaign-editor-campaign-editor-campaign-annotating-image-translate-type.png" width="auto">
+
+
+##### Campaign Type: Image Comparison
+
+The image comparison campaign enables running campaigns via which human participants can compare and rank images produced by different image Super-Resolution (SR) models. For more info on how this looks like from the contributor side see the *Image Comparison* section.
+
+<img src="_media/campaign-editor-campaign-editor-campaign-annotating-image-comparison.png" width="auto">
+
+#### Target Collections
+
+Via the “Target Collections” field the Campaign Organizer must select the collections of items the campaign should target. These collections are created and managed via the Collection Editor.
+
 
 #### Campaign Access Section
 
@@ -135,7 +159,9 @@ Here, the Campaign Organizer can add extra campaign moderators and select any sp
 
 #### Campaign Base Annotations Section
 
-In this section the Campaign Organizer can import annotations to be used as *campaign base annotations*. Then, they can run the campaign to validate these anntotions. The annotations can either be imported from MINT or via a JSON with the appropriate format.
+In this section the Campaign Organizer can import annotations to be used as *campaign base annotations*. Then, they can run the campaign to validate these annotations. The annotations can either be imported from MINT or via a JSON with the appropriate format.
+
+Filling this section is required for the *image comparison* and *translate* campaign types, while it is optional for the *basic* campaign type.
 
 *Note*: The imported annotations should conform to the expected [Annotation Model](_resources/Annotation_Model_5_3_24.pdf).
 
@@ -193,23 +219,26 @@ By clicking the *Statistics* button, the Campaign Owner can view some statistics
 ### Validation
 By clicking the *Validation* button the Campaign Owner can validate the campaign annotations. By typing or selecting one of the available tags, like "Bass saxophone", a list of Items annotated with the chosen tag will appear.
 
-<img src="_media/campaign-moderate-validation.png" width="auto">
+<img src="_media/moderate-campaign-validation.png" width="auto">
 
-### Publish Criteria
-The *Publish Criteria* button opens a pop-up page which allows the Campaign Owner to configure the criteria the exported annotations need to fulfil. Only annotations that fulfil the criteria will be included in the data export. The *minimum annotation score* is the sum of the upvotes minus the downvotes.
+### Campaign Export Criteria
+The *Specify Export Criteria* button opens a pop-up page which allows the Campaign Owner to configure the criteria the exported annotations need to fulfil. Only annotations that fulfil the criteria will be included in the data export. The *minimum annotation score* is the sum of the upvotes minus the downvotes.
 
-<img src="https://raw.githubusercontent.com/ails-lab/CrowdHeritage_Documentation/main/docs/_media/image24.jpg" width="auto">
+<img src="_media/moderate-campaign-specify-export-criteria.png" width="auto">
 
 ### Data Export
 By clicking the *Data Export* button, the Campaign Owner can see the two campaign export options, *EXPORT CONTRIBUTORS* and *EXPORT ANNOTATIONS*.
 
-These two buttons allow the Campaign Owner to export the contributing users and the annotations of the Campaign, as a JSON file.
+#### EXPORT ANNOTATIONS
+The Campaign Owner is presented with two options for exporting annotations. They can either copy the annotations download link into the clipboard or directly download the annotations file.
 
-<img src="_media/campaign-moderate-data-export.png" width="auto">
+#### EXPORT Contibutors
+There are two ways of exporting the campaign contributors: as CSV file (which contains a table with some basic information regarding the users), or as JSON file (which contains more detailed information about the contributing users)
+
+<img src="_media/moderate-campaign-data-export.png" width="auto">
 
 #### Export Annotations for MINT Tool
-In case the Campaign Owner wants to export the annotations to ingest them into the MINT tool, they can click on the *Copy Annotations URL for MINT* button.
-Then they can paste the URL in the respective MINT workspace to do a controlled import of the annotations.
+In case the Campaign Owner wants to export the annotations to ingest them into the MINT tool, they can simply copy the annotations download link and paste it into the respective MINT workspace to do a controlled import of the annotations.
 
 <!-- 
 local image example URL: "./_media/image1.jpg"
