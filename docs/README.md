@@ -1,7 +1,9 @@
 # CrowdHeritage Introduction
 
 ## What is CrowdHeritage?
-CrowdHeritage is an online crowdsourcing platform for enriching the metadata of digitized cultural heritage material. The platform was developed under the Europeana Generic Services project [CrowdHeritage](https://pro.europeana.eu/project/crowd-heritage).
+CrowdHeritage is an open platform for organising online crowdsourcing campaigns that mobilise people to improve the quality of cultural heritage collections. This could be in relation to different aspects, from multilingual coverage and image analysis to semantic tagging and bias detection. Participants are invited to enrich digital collections, either by producing new information (e.g. adding geo-locations) or by evaluating and validating automatic outputs produced by digital tools (e.g. detected biased phrases). 
+
+ The  platform was originally developed under the Europeana Generic Services project [CrowdHeritage](https://pro.europeana.eu/project/crowd-heritage) and has since been significantly extended and improved in the context of multiple projects in the domain of cultural heritage and beyond, e.g. [AI4Culture](https://www.ai4culture.eu/), [DE-BIAS](https://pro.europeana.eu/post/address-bias-in-your-cultural-heritage-collections-with-the-de-bias-project), [CitizenHeritage](https://www.citizenheritage.eu/), [EuropeanaTranslate] (https://pro.europeana.eu/post/building-on-state-of-the-art-machine-translation-services) and other. The platform has so far been used to organise more than 40 crowdsourcing campaigns with more than 980 unique contributors, generating around 112,000 annotations and evaluating more than 18,000.
 
 # Navigating CrowdHeritage Website
 
